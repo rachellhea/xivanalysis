@@ -10,10 +10,13 @@ const DEFAULT_OPTIONS = {
 			type: 'time',
 			time: {
 				displayFormats: {
-					minute: 'm:ss',
-					second: 'm:ss',
-					millisecond: 'm:ss.SS',
+					minute: 'mm:ss',
+					second: 'mm:ss',
+					millisecond: 'mm:ss.SSS',
 				},
+				// This tooltip format displays similar to a "relative" timestamp,
+				// since react assumes UNIX epoch timestamps for the data.
+				tooltipFormat: 'mm:ss.SSS',
 			},
 		}],
 	},
