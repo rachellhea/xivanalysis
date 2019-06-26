@@ -1,3 +1,5 @@
+import NoMercy from './NoMercy';
+
 export default [
-	// TODO: Put your modules here
+	NoMercy,
 ]
